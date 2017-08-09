@@ -10,7 +10,10 @@ export class RecipesService {
       new Gradient('Frit', '2'),
       new Gradient('Tomates', '4')
     ]),
-    new Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
+    new Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [
+      new Gradient('Jdid', '2'),
+      new Gradient('Carottes', '4')
+    ])
   ];
 
   getRecipes(): Recipe[]
