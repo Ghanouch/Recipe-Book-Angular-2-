@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Gradient} from "../recipes/gradient";
+import {ShoppingService} from "./shopping.service";
 
 @Component({
   selector: 'rb-shopping-list',
@@ -9,9 +10,15 @@ import {Gradient} from "../recipes/gradient";
 export class ShoppingListComponent implements OnInit {
 
   items: Gradient[] = [];
-  constructor() { }
+  constructor(private shopingService: ShoppingService) { }
 
   ngOnInit() {
+    this.items = this.shopingService.getIngrediant();
   }
+
+
+
+
+
 
 }

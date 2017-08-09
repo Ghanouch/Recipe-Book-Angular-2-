@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ShoppingService} from "./shopping.service";
 
 @Component({
   selector: 'rb-shopping-list-add',
@@ -10,5 +11,6 @@ export class ShoppingListAddComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 }
