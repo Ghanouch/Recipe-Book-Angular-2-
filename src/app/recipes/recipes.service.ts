@@ -21,4 +21,14 @@ export class RecipesService {
     return this.recipes;
   }
 
+  getRecipe(val: number): Recipe
+  {
+    return this.recipes[val];
+  }
+
+  delete(val: number)
+  {
+    this.recipes.splice(val,1);
+  }
+
 }
